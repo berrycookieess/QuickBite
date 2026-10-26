@@ -41,4 +41,15 @@ public class Menu {
     public double getHarga() {
         return harga;
     }
+    public String getIdMenu() {
+    return idMenu;
+}
+
+public String getNamaMenu() {
+    return namaMenu;
+}
+
+public int getStok() {
+    return stok;
+}
 }

@@ -1,3 +1,4 @@
+
 package QuickBite.boundary;
 
 import QuickBite.boundary.dto.CheckoutRequest;
@@ -39,7 +40,7 @@ public class CheckoutBoundary {
         );
 
         CheckoutResult result =
-                checkoutController.prosesCheckout(command);
+                checkoutController.prosesCheckout(request.toCommand());
 
         return ResponseEntity.ok(
                 new CheckoutResponse(
